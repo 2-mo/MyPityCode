@@ -1,0 +1,1026 @@
+﻿<Page
+    x:Class="newMyTime.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:newMyTime"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.Resources>
+
+            <!--休息-->
+            <Style TargetType="RelativePanel" x:Key="purpulePanel">
+                <Setter Property="Background" Value="#9f8bea" />
+            </Style>
+
+            <!--学习//55min-->
+            <Style TargetType="RelativePanel" x:Key="bluePanel">
+                <Setter Property="Background" Value="#73b4ef" />
+                <Setter Property="Grid.RowSpan" Value="11" />
+            </Style>
+
+            <!--学习//50min-->
+            <Style TargetType="RelativePanel" x:Key="blue2Panel">
+                <Setter Property="Background" Value="#73b4ef" />
+                <Setter Property="Grid.RowSpan" Value="10" />
+            </Style>
+
+            <!--绿-->
+            <Style TargetType="RelativePanel" x:Key="greenPanel">
+                <Setter Property="Background" Value="#7acfab" />
+                <Setter Property="Grid.RowSpan" Value="2" />
+            </Style>
+
+            <!--粉-->
+            <Style TargetType="RelativePanel" x:Key="pinkPanel">
+                <Setter Property="Background" Value="#e286ab" />
+                <Setter Property="Grid.RowSpan" Value="8" />
+            </Style>
+
+            <!--黄-->
+            <Style TargetType="RelativePanel" x:Key="yellowPanel">
+                <Setter Property="Background" Value="#ffcb63" />
+                <Setter Property="Grid.RowSpan" Value="3" />
+            </Style>
+
+            <!--水色-->
+            <Style TargetType="RelativePanel" x:Key="waterPanel">
+                <Setter Property="Background" Value="#81c7d4" />
+            </Style>
+
+            <!--橙-->
+            <Style TargetType="RelativePanel" x:Key="orangePanel">
+                <Setter Property="Background" Value="#f87d02" />
+            </Style>
+
+
+            <!--Text-->
+            <Style TargetType="TextBlock" x:Key="bigText">
+                <Setter Property="FontFamily" Value="Calibri" />
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="FontSize" Value="60" />
+                <Setter Property="Margin" Value="20" />
+            </Style>
+
+            <Style TargetType="TextBlock" x:Key="middleText">
+                <Setter Property="FontFamily" Value="Calibri" />
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="FontSize" Value="40" />
+                <Setter Property="Margin" Value="20,0,0,0" />
+            </Style>
+
+            <Style TargetType="TextBlock" x:Key="littleText">
+                <Setter Property="FontFamily" Value="Calibri" />
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="FontSize" Value="30" />
+                <Setter Property="Margin" Value="20,0,0,5" />
+            </Style>
+
+            <Style TargetType="TextBlock" x:Key="markText">
+                <Setter Property="FontFamily" Value="Calibri" />
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="FontSize" Value="40" />
+                <Setter Property="Margin" Value="0,0,10,0" />
+                <Setter Property="Opacity" Value="0.6" />
+            </Style>
+
+            <Style TargetType="TextBlock" x:Key="littleMarkText">
+                <Setter Property="FontFamily" Value="Calibri" />
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="Margin" Value="0,0,10,0" />
+                <Setter Property="Opacity" Value="0.6" />
+            </Style>
+
+
+        </Grid.Resources>
+
+        <Grid Background="Gray">
+
+            <!--栅格-->
+            <Grid.ColumnDefinitions>
+                <!--列-->
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
+            </Grid.RowDefinitions>
+
+
+            <!--睡觉-->
+            <RelativePanel 
+                Name="deepSleep"
+                Grid.Column="0" 
+                Grid.Row="0" 
+                Grid.RowSpan="78" 
+                Style="{StaticResource purpulePanel}" >
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="0:00" 
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+
+                <RelativePanel RelativePanel.AlignBottomWithPanel="True">
+                    <TextBlock 
+                            Text="6:30" 
+                            Style="{StaticResource bigText}"/>
+                </RelativePanel>
+
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Width="80"
+                            TextWrapping="Wrap"
+                            Text="沅有芷兮澧有兰" 
+                            FontSize="80" 
+                            FontFamily="書體坊顏體㊣" 
+                            Foreground="White"
+                            Margin="20,10,40,10"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--洗漱-->
+            <RelativePanel 
+                Grid.Column="0" 
+                Grid.Row="78" 
+                Grid.RowSpan="3" 
+                Style="{StaticResource waterPanel}" >
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="Brush." 
+                            FontSize="20" 
+                            FontFamily="Calibri" 
+                            Foreground="White"
+                            Margin="5"/>
+                </RelativePanel>
+            </RelativePanel>
+
+
+            <!--出门-->
+            <RelativePanel 
+                Grid.Column="0" 
+                Grid.Row="81" 
+                Grid.RowSpan="3" 
+                Style="{StaticResource yellowPanel}" >
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="Go!" 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+
+                <RelativePanel>
+                    <TextBlock 
+                            Text="6:45"
+                            Margin="20,-25,0,0"
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+
+            <!--0-->
+            <RelativePanel 
+                Grid.Column="0" 
+                Grid.Row="84" 
+                Grid.RowSpan="8" 
+                Style="{StaticResource bluePanel}" >
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="7:00" 
+                           Style="{StaticResource middleText}"/>
+                </RelativePanel>
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="0" 
+                            Style="{StaticResource markText}"/>
+                </RelativePanel>
+
+            </RelativePanel>
+
+            <!--Breakfast-->
+            <RelativePanel 
+                Grid.Column="0" 
+                Grid.Row="92" 
+                Grid.RowSpan="4" 
+                Style="{StaticResource pinkPanel}">
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="7:40" 
+                            Style="{StaticResource middleText}"
+                            Margin="20,-25,20,5"/>
+                </RelativePanel>
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="早餐" 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--1-->
+            <RelativePanel 
+                Grid.Column="1" 
+                Grid.Row="0"    
+                Style="{StaticResource bluePanel}" >
+                <!--时间-->
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="8:00" 
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+                <RelativePanel RelativePanel.AlignBottomWithPanel="True">
+                    <TextBlock 
+                            Text="8:55" 
+                            Style="{StaticResource littleText}"/>
+                </RelativePanel>
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="1" 
+                            Style="{StaticResource markText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--break1-->
+            <RelativePanel 
+                Grid.Column="1" 
+                Grid.Row="11" 
+                Style="{StaticResource greenPanel}" >
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="10min" 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--2-->
+            <RelativePanel 
+                Grid.Column="1" 
+                Grid.Row="13"    
+                Style="{StaticResource bluePanel}" >
+                <!--时间-->
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="9:05" 
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+                <RelativePanel RelativePanel.AlignBottomWithPanel="True">
+                    <TextBlock 
+                            Text="10:00" 
+                            Style="{StaticResource littleText}"/>
+                </RelativePanel>
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="2" 
+                            Style="{StaticResource markText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--break2-->
+            <RelativePanel 
+                Grid.Column="1" 
+                Grid.Row="24" 
+                Style="{StaticResource greenPanel}" >
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="10min" 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--3-->
+            <RelativePanel 
+                Grid.Column="1" 
+                Grid.Row="26"    
+                Style="{StaticResource bluePanel}" >
+                <!--时间-->
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="10:10" 
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+                <RelativePanel RelativePanel.AlignBottomWithPanel="True">
+                    <TextBlock 
+                            Text="11:05" 
+                            Style="{StaticResource littleText}"/>
+                </RelativePanel>
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="3" 
+                            Style="{StaticResource markText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--back-->
+            <RelativePanel 
+                Grid.Column="1" 
+                Grid.Row="37" 
+                Style="{StaticResource yellowPanel}" >
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="15min" 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--午餐-->
+            <RelativePanel 
+                Grid.Column="1" 
+                Grid.Row="40"    
+                Style="{StaticResource pinkPanel}" >
+                <!--时间-->
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="11:20" 
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="进食" 
+                            Style="{StaticResource markText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+
+
+            <!--午休-->
+            <RelativePanel 
+                Grid.Column="1" 
+                Grid.Row="48"
+                Grid.RowSpan="12"
+                Style="{StaticResource purpulePanel}" >
+                <!--时间-->
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="12:00" 
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+                <RelativePanel RelativePanel.AlignBottomWithPanel="True">
+                    <TextBlock 
+                            Text="13:00" 
+                            Style="{StaticResource littleText}"/>
+                </RelativePanel>
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="午休" 
+                            Style="{StaticResource markText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--back-->
+            <RelativePanel 
+                Grid.Column="1" 
+                Grid.Row="60"
+                Grid.RowSpan="3"
+                Style="{StaticResource waterPanel}" >
+                <!--文字-->
+                <RelativePanel
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="15min" 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--Go!-->
+            <RelativePanel 
+                Grid.Column="1" 
+                Grid.Row="63"
+                Style="{StaticResource yellowPanel}" >
+                <!--文字-->
+                <RelativePanel >
+                    <TextBlock 
+                            Text="13:15" 
+                        Margin="20,-25,0,0"
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+                <RelativePanel
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="15min" 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--4-->
+            <RelativePanel 
+                Grid.Column="1" 
+                Grid.Row="66"    
+                Style="{StaticResource blue2Panel}" >
+                <!--时间-->
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="13:30" 
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+                <RelativePanel RelativePanel.AlignBottomWithPanel="True">
+                    <TextBlock 
+                            Text="14:20" 
+                            Style="{StaticResource littleText}"/>
+                </RelativePanel>
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="4" 
+                            Style="{StaticResource markText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--break2-->
+            <RelativePanel 
+                Grid.Column="1" 
+                Grid.Row="76" 
+                Style="{StaticResource greenPanel}" >
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="10min" 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--5-->
+            <RelativePanel 
+                Grid.Column="1" 
+                Grid.Row="78"    
+                Style="{StaticResource blue2Panel}" >
+                <!--时间-->
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="14:30" 
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+                <RelativePanel RelativePanel.AlignBottomWithPanel="True">
+                    <TextBlock 
+                            Text="15:20" 
+                            Style="{StaticResource littleText}"/>
+                </RelativePanel>
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="5" 
+                            Style="{StaticResource markText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--break2-->
+            <RelativePanel 
+                Grid.Column="1" 
+                Grid.Row="88" 
+                Style="{StaticResource greenPanel}" >
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="10min" 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--6a-->
+            <RelativePanel 
+                Grid.Column="1" 
+                Grid.Row="90"    
+                Style="{StaticResource bluePanel}" >
+                <!--时间-->
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="15:30" 
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="6" 
+                            Style="{StaticResource markText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--6b-->
+            <RelativePanel 
+                Grid.Column="2" 
+                Grid.Row="0"
+                Grid.RowSpan="4"
+                Style="{StaticResource blue2Panel}" >
+                <!--时间-->
+
+                <RelativePanel RelativePanel.AlignBottomWithPanel="True">
+                    <TextBlock 
+                            Text="16:20" 
+                            Style="{StaticResource littleText}"/>
+                </RelativePanel>
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="6" 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--break2-->
+            <RelativePanel 
+                Grid.Column="2" 
+                Grid.Row="4" 
+                Style="{StaticResource greenPanel}" >
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="10min" 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+
+            <!--7-->
+            <RelativePanel 
+                Grid.Column="2" 
+                Grid.Row="6"    
+                Style="{StaticResource blue2Panel}" >
+                <!--时间-->
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="16:30" 
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+                <RelativePanel RelativePanel.AlignBottomWithPanel="True">
+                    <TextBlock 
+                            Text="17:20" 
+                            Style="{StaticResource littleText}"/>
+                </RelativePanel>
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="7" 
+                            Style="{StaticResource markText}"/>
+                </RelativePanel>
+            </RelativePanel>
+            
+            <!--运动-->
+            <RelativePanel 
+                Grid.Column="2" 
+                Grid.Row="16"    
+                Grid.RowSpan="8"
+                Style="{StaticResource orangePanel}" >
+                <!--时间-->
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="17:20" 
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+                <RelativePanel RelativePanel.AlignBottomWithPanel="True">
+                    <TextBlock 
+                            Text="18:00" 
+                            Style="{StaticResource littleText}"/>
+                </RelativePanel>
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="跑跑" 
+                            Style="{StaticResource markText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--晚餐-->
+            <RelativePanel 
+                Grid.Column="2" 
+                Grid.Row="24"    
+                Grid.RowSpan="8"
+                Style="{StaticResource pinkPanel}" >
+                <!--时间-->
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="18:00" 
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+                <RelativePanel RelativePanel.AlignBottomWithPanel="True">
+                    <TextBlock 
+                            Text="18:40" 
+                            Style="{StaticResource littleText}"/>
+                </RelativePanel>
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="晚餐" 
+                            Style="{StaticResource markText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--运动-->
+            <RelativePanel 
+                Grid.Column="2" 
+                Grid.Row="32"    
+                Grid.RowSpan="4"
+                Style="{StaticResource yellowPanel}" >
+
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="买早餐" 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--s1-->
+            <RelativePanel 
+                Grid.Column="2" 
+                Grid.Row="36"    
+                Style="{StaticResource bluePanel}" >
+                <!--时间-->
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="19:00" 
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+                <RelativePanel RelativePanel.AlignBottomWithPanel="True">
+                    <TextBlock 
+                            Text="19:55" 
+                            Style="{StaticResource littleText}"/>
+                </RelativePanel>
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="s1" 
+                            Style="{StaticResource markText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--break-->
+            <RelativePanel 
+                Grid.Column="2" 
+                Grid.Row="47" 
+                Style="{StaticResource greenPanel}" >
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="10min" 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--s2-->
+            <RelativePanel 
+                Grid.Column="2" 
+                Grid.Row="49"    
+                Style="{StaticResource bluePanel}" >
+                <!--时间-->
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="20:05" 
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+                <RelativePanel RelativePanel.AlignBottomWithPanel="True">
+                    <TextBlock 
+                            Text="21:00" 
+                            Style="{StaticResource littleText}"/>
+                </RelativePanel>
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="s1" 
+                            Style="{StaticResource markText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--break-->
+            <RelativePanel 
+                Grid.Column="2" 
+                Grid.Row="60" 
+                Style="{StaticResource greenPanel}" >
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="10min" 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--s2-->
+            <RelativePanel 
+                Grid.Column="2" 
+                Grid.Row="62"    
+                Style="{StaticResource blue2Panel}" >
+                <!--时间-->
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="21:10" 
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+                <RelativePanel RelativePanel.AlignBottomWithPanel="True">
+                    <TextBlock 
+                            Text="22:00" 
+                            Style="{StaticResource littleText}"/>
+                </RelativePanel>
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="s2" 
+                            Style="{StaticResource markText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--break-->
+            <RelativePanel 
+                Grid.Column="2" 
+                Grid.Row="72" 
+                Style="{StaticResource greenPanel}" >
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="10min" 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--s3-->
+            <RelativePanel 
+                Grid.Column="2" 
+                Grid.Row="74"  
+                Grid.RowSpan="8"
+                Style="{StaticResource bluePanel}" >
+                <!--时间-->
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="22:10" 
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+                <RelativePanel RelativePanel.AlignBottomWithPanel="True">
+                    <TextBlock 
+                            Text="22:50" 
+                            Style="{StaticResource littleText}"/>
+                </RelativePanel>
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="s1" 
+                            Style="{StaticResource markText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--back-->
+            <RelativePanel 
+                Grid.Column="2" 
+                Grid.Row="82" 
+                Style="{StaticResource yellowPanel}" >
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="Back." 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--wash-->
+            <RelativePanel 
+                Grid.Column="2" 
+                Grid.Row="85" 
+                Grid.RowSpan="6"
+                Style="{StaticResource waterPanel}" >
+                
+                <!--时间-->
+                <RelativePanel RelativePanel.AlignTopWithPanel="True">
+                    <TextBlock 
+                            Text="23:05" 
+                            Margin="20,-25,0,0"
+                            Style="{StaticResource middleText}"/>
+                </RelativePanel>
+                <RelativePanel RelativePanel.AlignBottomWithPanel="True">
+                    <TextBlock 
+                            Text="23:35" 
+                            Style="{StaticResource littleText}"/>
+                </RelativePanel>
+                
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="洗刷刷" 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+            <!--tidy-->
+            <RelativePanel 
+                Grid.Column="2" 
+                Grid.Row="91" 
+                Grid.RowSpan="6"
+                Style="{StaticResource orangePanel}" >
+
+                <!--时间-->
+                <RelativePanel RelativePanel.AlignBottomWithPanel="True">
+                    <TextBlock 
+                            Text="24:00" 
+                            Style="{StaticResource littleText}"/>
+                </RelativePanel>
+
+                <!--文字-->
+                <RelativePanel 
+                        RelativePanel.AlignRightWithPanel="True" 
+                        RelativePanel.AlignVerticalCenterWithPanel="True">
+                    <TextBlock 
+                            Text="MyTime" 
+                            Style="{StaticResource littleMarkText}"/>
+                </RelativePanel>
+            </RelativePanel>
+
+
+
+
+
+
+
+        </Grid>
+
+    </Grid>
+</Page>

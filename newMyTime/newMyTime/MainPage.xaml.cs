@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -22,9 +23,15 @@ namespace newMyTime
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
+        ObservableCollection<FontFamily> fonts = new ObservableCollection<FontFamily>();
+
         public MainPage()
         {
             this.InitializeComponent();
+            fonts.Add(new FontFamily("Arial"));
+            fonts.Add(new FontFamily("Courier New"));
+            fonts.Add(new FontFamily("Times New Roman"));
         }
     }
 }
